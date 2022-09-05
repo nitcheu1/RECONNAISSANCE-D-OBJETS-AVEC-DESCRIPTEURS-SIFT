@@ -5,8 +5,7 @@ Comme dataset nous avons porté notre choix sur le dataset Columbia Object Image
 # LES DIFFÉRENTES ÉTAPES DU DÉVELOPPEMENT DU MODÈLE
 # Transformation des images
 Dans le but d’utiliser aisément nos images, nous avons procédé comme il suit:
-Chargement des images dans l’espace de travail
-Transformation des images en niveau de gris
+Chargement des images dans l’espace de travail et Transformation des images en niveau de gris
 # Calcul des descripteurs
 Grâce à la méthode sift.detectAndCompute fournie dans OpenCV nous avons obtenu les keypoints de chaque image dont nous avons ensuite calculé les descripteurs correspondants. Pour ne pas avoir à recalculer les descripteurs de chaque keypoint à chaque exécution de notre programme, nous avons conservé ces derniers dans deux fichiers différents. Ensuite grâce à la méthode cv.drawKeypoints nous avons affiché les keypoints de chaque image.
 # MATCHING ENTRE LES IMAGES
